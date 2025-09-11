@@ -10,13 +10,13 @@ A simple, fast, and modern RESTful API built with FastAPI and Redis to create, m
 
 ### ✨ Key Features
 
-  * [cite\_start]**Create Polls**: Easily create new polls with a title, 2 to 5 choices, and an optional expiration date[cite: 21].
-  * [cite\_start]**Vote**: Cast votes on active polls using either a unique choice ID or a simple numerical label[cite: 17, 19].
-  * [cite\_start]**View Polls**: Retrieve a single poll by its ID or list all polls with filters for **active**, **expired**, or **all**[cite: 11, 12, 13].
-  * [cite\_start]**Real-Time Results**: Get instant poll results, including total votes and a count for each choice, sorted by popularity[cite: 30].
-  * [cite\_start]**Data Validation**: Robust data validation powered by Pydantic ensures data integrity and provides clear error messages[cite: 9].
-  * [cite\_start]**Duplicate Vote Prevention**: Ensures that a voter (identified by email) can only vote once per poll[cite: 15].
-  * [cite\_start]**Danger Zone**: Includes protected operations for irreversible data loss, such as deleting a poll and all its associated votes[cite: 4, 7].
+  * **Create Polls**: Easily create new polls with a title, 2 to 5 choices, and an optional expiration date[cite: 21].
+  * **Vote**: Cast votes on active polls using either a unique choice ID or a simple numerical label[cite: 17, 19].
+  * **View Polls**: Retrieve a single poll by its ID or list all polls with filters for **active**, **expired**, or **all**[cite: 11, 12, 13].
+  * **Real-Time Results**: Get instant poll results, including total votes and a count for each choice, sorted by popularity[cite: 30].
+  * **Data Validation**: Robust data validation powered by Pydantic ensures data integrity and provides clear error messages[cite: 9].
+  * **Duplicate Vote Prevention**: Ensures that a voter (identified by email) can only vote once per poll[cite: 15].
+  * **Danger Zone**: Includes protected operations for irreversible data loss, such as deleting a poll and all its associated votes[cite: 4, 7].
 
 -----
 
@@ -28,7 +28,7 @@ This project is built with a modern Python stack, focusing on performance and de
 | -------------------- | ----------------------------------------------------------------------------------------------- |
 | **Language** | Python 3.12                                                                                     |
 | **Framework** | [FastAPI](https://fastapi.tiangolo.com/)                                                        |
-| **Database** | [cite\_start][Upstash Redis](https://upstash.com/redis) (for data storage) [cite: 26]                        |
+| **Database** | [Upstash Redis](https://upstash.com/redis) (for data storage) [cite: 26]                        |
 | **Data Validation** | [Pydantic](https://docs.pydantic.dev/latest/)                                                   |
 | **ASGI Server** | [Uvicorn](https://www.uvicorn.org/)                                                             |
 | **Dependency Mgmt.** | [uv](https://github.com/astral-sh/uv)                                                           |
@@ -199,7 +199,7 @@ curl -X 'GET' \
 #### 6\. Delete a Poll
 
   * **Endpoint**: `DELETE /polls/{poll_id}`
-  * [cite\_start]**Warning**: This is an irreversible action that deletes the poll, all its votes, and its results[cite: 31].
+  * **Warning**: This is an irreversible action that deletes the poll, all its votes, and its results[cite: 31].
 
 <!-- end list -->
 
