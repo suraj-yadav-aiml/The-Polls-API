@@ -229,8 +229,8 @@ The project follows a modular structure to separate concerns and improve maintai
   │   └── services/       # Business logic and database interactions.
   │       └── utils.py    # Functions to interact with Redis.
   ├── .env.example        # Example environment variables.
-  [cite_start]├── main.py             # Main FastAPI application instance[cite: 1].
-  [cite_start]├── pyproject.toml      # Project metadata and dependencies[cite: 5].
+          ├── main.py             # Main FastAPI application instance[cite: 1].
+          ├── pyproject.toml      # Project metadata and dependencies[cite: 5].
   └── requirements.txt    # Frozen dependency list.
 ```
 
