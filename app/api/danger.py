@@ -8,9 +8,9 @@ router = APIRouter()
 
 @router.delete("/{poll_id}")
 def delete_poll(poll_id: UUID):
-    poll = utils.get_poll(poll_id=poll_id)
-    poll_title = poll.title
-    if not poll:
+    poll_to_delete = utils.get_poll(poll_id=poll_id)
+    poll_title = poll_to_delete.title
+    if not poll_to_delete:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="A poll by that ID does ot exist"
